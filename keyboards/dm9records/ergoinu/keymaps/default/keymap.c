@@ -5,14 +5,6 @@
 extern rgblight_config_t rgblight_config;
 #endif
 
-#define JA_CLON KC_QUOT  // : and +
-#define JA_AT   KC_LBRC  // @ and `
-#define JA_HAT  KC_EQL   // ^ and ~
-#define JA_ENUN KC_RO    // \ and _ (EN mark and UNder score)
-#define JA_ENVL KC_JYEN  // \ and | (EN mark and Vertical Line)
-#define JA_LBRC KC_RBRC  // [ and {
-#define JA_RBRC KC_BSLS  // ] and }
-
 enum LAYER_NO {
   BASE = 0,
   META,
@@ -23,10 +15,6 @@ enum CUSTOM_KEYCODES {
   RGB_RST = SAFE_RANGE,
   RGB_TYPE,
 };
-
-// Fillers to make layering more clear
-#define ______ KC_TRNS
-#define XXXXXX KC_NO
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
